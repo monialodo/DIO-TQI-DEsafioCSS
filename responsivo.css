@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat+Brush&family=Montserrat&family=Sacramento&display=swap");
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .card {
+    height: 202px;
+    width: 270px;
+  }
+  .card-text {
+    text-align: justify;
+
+  }
+
+  .card-techs {
+    width: 15%;
+  }
+
+
+  .large {
+    width: 50%;
+    margin: 0 3% 0 1%;
+  }
+
+  .frontback {
+    display: inline-flex;
+   justify-content: center;
+   width: 30%;
+
+  }
+
+  .double{
+    width: 50%;
+  }
+
+  .card-wrapper h2 {
+    font-size: 22px;
+
+  }
+  
+  .card:hover > .card-wrapper p {
+    font-size: 14px;
+  }
+  
+
+  .card:hover > .card-wrapper::before {
+    height: 190px;
+    width: 235px;
+  }
+  
+  
+}
+
+
+@media (max-width: 800px) {
+
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: "Architects Daughter", sans-serif;
+    margin-bottom: 0px;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .title {
+      font-size: 55px;
+  }
+ 
+
+ .right {
+    flex-direction: column-reverse;
+  }
+
+   
+  .left {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 250px;
+    width: 250px;
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+
+  .card-techs {
+    width: 20%;
+  }
+
+  .large {
+    width: 90%;
+  }
+
+  .frontback {
+    display: inline-flex;
+    width: 90%;
+    justify-content: center;
+   
+  }
+
+  .card:hover > .card-wrapper::before {
+    height: 190px;
+    width: 190px;
+  }
+}
+
+
+
+

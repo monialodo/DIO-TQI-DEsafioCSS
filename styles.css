@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat+Brush&family=Montserrat&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
 
 body {
   margin: 0;
@@ -14,12 +15,17 @@ body {
   width: 100vw;
   background: linear-gradient(
     -60deg,
-    #251642,
-    #1a759f,
-    #168aad,
-    #52b69a,
-    #76c893
-  );
+    #5f86f2,
+    #7f52aa,   
+    #f3517d,
+    #e42c71,
+    #ff6a40,
+    #ffa92a,
+    #009dc3,
+    #008bac  
+    );
+
+
   background-size: 400% 400%;
   display: flex;
   flex-direction: column;
@@ -106,7 +112,7 @@ a:hover {
 .checkbox .trace {
   width: 50px;
   height: 2px;
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   border-radius: 4px;
   transition: 0.5s ease-in-out;
@@ -248,7 +254,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   filter: grayscale(0.5);
-  color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -306,7 +311,7 @@ a:hover {
 }
 
 .card-wrapper h2 {
-  font-size: 40px;
+  font-size: 34px;
   text-transform: uppercase;
   letter-spacing: 4px;
   margin: 0 0 0 5%;
@@ -345,47 +350,57 @@ a:hover {
   font-size: 18px;
 }
 
-.line {
-  width: 8rem;
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 1%;
+.frontback {
+  display: inline-flex;
+ justify-content: center;
+ width: 30%;
+
 }
 
-.loading {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #52b69a;
-  transform: scale(1);
-  opacity: 0.6;
+.double{
+  width: 50%;
 }
 
-.loading:nth-child(1) {
-  animation: pulse 1.5s ease-in-out infinite;
+.gradient-border {
+  --border-width: 3px;
+  position: relative;
+  border-radius: var(--border-width);
 }
+.gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      #5f86f2,
+      #7f52aa,   
+      #f3517d,
+      #e42c71,
+      #ff6a40,
+      #ffa92a,
+      #009dc3,
+      #008bac  
 
-.loading:nth-child(2) {
-  animation: pulse 1.5s ease-in-out infinite;
-  animation-delay: 0.2s;
-}
 
-.loading:nth-child(3) {
-  animation: pulse 1.5s ease-in-out infinite;
-  animation-delay: 0.4s;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
   }
 
+ .line 
+  {
+    width:90% ; 
+    margin-top: 1%
+  }
+@keyframes moveGradient {
   50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(1);
+    background-position: 100% 50%;
   }
 }
 
@@ -402,6 +417,7 @@ a:hover {
 }
 
 /* RESPONSIVO */
+
 @media (max-width: 800px) {
   .social-media {
     display: flex;
@@ -437,3 +453,7 @@ a:hover {
     width: 190px;
   }
 }
+
+
+
+

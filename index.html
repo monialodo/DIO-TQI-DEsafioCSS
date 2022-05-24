@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="path/to/font-mfizz/font-mfizz.css">
 
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/responsivo.css">
 
     <title>My Personal Site</title>
 </head>
@@ -48,23 +49,27 @@
             <a href="https://github.com/monialodo" target="_blank">Github</a>
         </div>
     </header>
-    <!-- Drum Kit -->
+
     <div class="container">
         <div class="title">
             Projetos
+            <div class="gradient-border"></div>
         </div>
-        <div class="card-container">
-            <div class="card-text">Esse projeto foi desenvolvido com HTML, CSS e JavaScript para treinar conhecimentos
-                de DOM. O projeto consiste em uma bateria virtual
-                que pode ser tocada com o mouse ou as teclas correspondentes no teclado.
-                Esse projeto faz parte do curso "The Complete 2022 Web Development Bootcamp by Angela Yu" disponível na
-                Udemy.
-            </div>
+
+        <!-- Drum Kit -->
+        <div class="card-container right">
             <div class="card-techs">
                 <h5>Linguagens</h6>
                     <p><i class="fa-brands fa-html5"></i>HTML</p>
                     <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
                     <p><i class="fa-brands fa-js"></i>JavaScript</p>
+            </div>
+
+            <div class="card-text">Esse projeto foi desenvolvido com HTML, CSS e JavaScript para treinar conhecimentos
+                de DOM. O projeto consiste em uma bateria virtual
+                que pode ser tocada com o mouse ou as teclas correspondentes no teclado.
+                Esse projeto faz parte do curso "The Complete 2022 Web Development Bootcamp by Angela Yu" disponível na
+                Udemy.
             </div>
             <div class="card">
                 <div class="card-wrapper">
@@ -75,14 +80,12 @@
                 </div>
             </div>
         </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
+
+
 
         <!-- Genius  -->
-        <div class="card-container">
+        <div class="gradient-border line" style=""></div>
+        <div class="card-container left">
             <div class="card">
                 <div class="card-wrapper">
                     <a href="https://genius-game-monia.herokuapp.com/">
@@ -98,6 +101,7 @@
                 Esse projeto faz parte do curso "The Complete 2022 Web Development Bootcamp by Angela Yu" disponível na
                 Udemy.
             </div>
+
             <div class="card-techs">
                 <h5>Linguagens</h6>
                     <p><i class="fa-brands fa-html5"></i>HTML</p>
@@ -105,25 +109,23 @@
                     <p><i class="fa-brands fa-js"></i>JavaScript</p>
             </div>
         </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
+
         <!-- Blog  -->
-        <div class="card-container">
-            <div class="card-text">Esse projeto foi desenvolvido com EJS para treinamento de NodeJS e MongoDB. O projeto
-                consiste em pequeno blog onde é possivel criar posts, salvar posts e
-                editar os mesmos. Os dados persistem e são salvos em database pelo MongoDB.
-                Esse projeto faz parte do curso "The Complete 2022 Web Development Bootcamp by Angela Yu" disponível na
-                Udemy.
-            </div>
+        <div class="gradient-border line"></div>
+        <div class="card-container right">
             <div class="card-techs">
                 <h5>Linguagens</h6>
                     <p><i class="fa-brands fa-js"></i>JavaScript</p>
                     <p><i class="fa-brands fa-node-js"></i>NodeJS</p>
                     <p><i class="fa-brands fa-envira"></i>MongoDB</p>
             </div>
+            <div class="card-text">Esse projeto foi desenvolvido com EJS para treinamento de NodeJS e MongoDB. O projeto
+                consiste em pequeno blog onde é possivel criar posts, salvar posts e
+                editar os mesmos. Os dados persistem e são salvos em database pelo MongoDB.
+                Esse projeto faz parte do curso "The Complete 2022 Web Development Bootcamp by Angela Yu" disponível na
+                Udemy.
+            </div>
+
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
@@ -139,7 +141,9 @@
             <div class="loading"></div>
         </div>
         <!-- ToDo List -->
-        <div class="card-container">
+        <div class="gradient-border line"></div>
+
+        <div class="card-container left ">
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
@@ -161,20 +165,10 @@
                             style="color: #6d6d6d; margin-right: 3px;"></span> EJS</p>
             </div>
         </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
+
         <!-- Live Questions -->
-        <div class="card-container">
-            <div class="card-text">Esse projeto foi desenvolvido com CSS, EJS e JavaScript para treinamento de NodeJS e
-                SQLite. O projeto
-                consiste em uma aplicação que permite criar salas com código único que pode ser usado para acesso. Quem
-                acessar a sala pode enviar perguntas anônimas.
-                O administrador da sala pode marcar a pergunta como lida ou excluir a mesma.
-                Esse projeto faz parte da semana NLW Toge da RocketSeat.
-            </div>
+        <div class="gradient-border line"></div>
+        <div class="card-container right">
             <div class="card-techs">
                 <h5>Linguagens</h6>
                     <p><i class="fa-brands fa-js"></i>JavaScript</p>
@@ -183,114 +177,126 @@
                             style="color: #6d6d6d; margin-right: 3px;"></span>SQLite
                     </p>
             </div>
+            <div class="card-text">Esse projeto foi desenvolvido com CSS, EJS e JavaScript para treinamento de NodeJS e
+                SQLite. O projeto
+                consiste em uma aplicação que permite criar salas com código único que pode ser usado para acesso. Quem
+                acessar a sala pode enviar perguntas anônimas.
+                O administrador da sala pode marcar a pergunta como lida ou excluir a mesma.
+                Esse projeto faz parte da semana NLW Toge da RocketSeat.
+            </div>
+
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
                         <h2>Live Questions</h2>
-                        <p>App para perguntas anônimas</p>
+                        <p>Perguntas anônimas em lives</p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
+
 
         <!-- Live Comments -->
-        <div class="card-container">
+
+        <div class="gradient-border line"></div>
+        <div class="card-container left ">
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
                         <h2>Live Comments</h2>
-                        <p>App de mensagens instantanêas em live</p>
+                        <p>Mensagens em lives</p>
                     </a>
                 </div>
             </div>
-            <div class="card-text">Esse projeto foi desenvolvido durante a semana NLW Heat promovida pela RocketSeat.
+            <div class="card-text large">Esse projeto foi desenvolvido durante a semana NLW Heat promovida pela
+                RocketSeat.
                 Ele consiste em uma interface de login, onde após logado
                 o usuário pode deixar uma mensagem. Essa mensagem será exibida durante uma live, mostrando três
                 mensagens por tela.
                 Foram utilizadas diversas tecnologias para criação de Backend e Frontend.
             </div>
-            <div class="card-techs">
-                <h5>Backend</h6>
-                    <p><span class="iconify-inline" data-icon="cib:typescript"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>TypeScript
-                    </p>
-                    <p><i class="fa-brands fa-node-js"></i>NodeJS</p>
-                    <p><span class="iconify-inline" data-icon="file-icons:prisma"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>Prisma
-                    </p>
-                    <p><span class="iconify-inline" data-icon="akar-icons:postgresql-fill"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>Postgres</p>
-            </div>
-            <div class="card-techs">
-                <h5>Frontend</h6>
-                    <p><span class="iconify-inline" data-icon="cib:typescript"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>TypeScript
-                    </p>
-                    <p><i class="fa-brands fa-react"></i>React</p>
-                    <p><span class="iconify-inline" data-icon="file-icons:vite"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>Vite</p>
-                    <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+            <div class="frontback">
+
+                <div class="card-techs double">
+                    <h5>Backend</h6>
+                        <p><span class="iconify-inline" data-icon="cib:typescript"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>TypeScript
+                        </p>
+                        <p><i class="fa-brands fa-node-js"></i>NodeJS</p>
+                        <p><span class="iconify-inline" data-icon="file-icons:prisma"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>Prisma
+                        </p>
+                        <p><span class="iconify-inline" data-icon="akar-icons:postgresql-fill"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>Postgres</p>
+                </div>
+                <div class="card-techs double">
+                    <h5>Frontend</h6>
+                        <p><span class="iconify-inline" data-icon="cib:typescript"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>TypeScript
+                        </p>
+                        <p><i class="fa-brands fa-react"></i>React</p>
+                        <p><span class="iconify-inline" data-icon="file-icons:vite"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>Vite</p>
+                        <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                </div>
             </div>
         </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
+
         <!-- Pix Inter -->
-        <div class="card-container">
-            <div class="card-text">Esse projeto foi desenvolvido durante a semana Dio Inter. A proposta é criar uma
+        <div class="gradient-border line"></div>
+        <div class="card-container right ">
+            <div class="frontback">
+                <div class="card-techs double">
+
+                    <h5>Backend</h6>
+                        <p><span class="iconify-inline" data-icon="cib:typescript"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>TypeScript</p>
+                        <p><i class="fa-brands fa-node-js"></i>NodeJS</p>
+                        <p><i class="fa-brands fa-docker"></i>Docker</p>
+                        <p><span class="iconify-inline" data-icon="akar-icons:postgresql-fill"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>Postgres</p>
+                </div>
+                <div class="card-techs double">
+
+                    <h5>Frontend</h6>
+                        <p><span class="iconify-inline" data-icon="cib:typescript"
+                                style="color: #6d6d6d;margin-right: 3px;"></span>TypeScript</p>
+                        <p><i class="fa-brands fa-react"></i>NodeJS</p>
+                        <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
+                        <p><span class="iconify-inline" data-icon="file-icons:styledcomponents"
+                                style="color: #6d6d6d; margin-right: 3px;"></span>Styled Components</p>
+                </div>
+
+            </div>
+
+            <div class="card-text large">Esse projeto foi desenvolvido durante a semana Dio Inter. A proposta é criar
+                uma
                 interface para gerenciar o envio e recebimento de pix
                 através de uma chave aleatória. A aplicação permite o cadastro de usuários, login de usuários, solicitar
                 pix, receber pix e ver as movimentações
                 Foram utilizadas diversas tecnologias para criação de Backend e Frontend.
             </div>
-            <div class="card-techs">
-                <h5>Backend</h6>
-                    <p><span class="iconify-inline" data-icon="cib:typescript"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>TypeScript</p>
-                    <p><i class="fa-brands fa-node-js"></i>NodeJS</p>
-                    <p><i class="fa-brands fa-docker"></i>Docker</p>
-                    <p><span class="iconify-inline" data-icon="akar-icons:postgresql-fill"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>Postgres</p>
-            </div>
-            <div class="card-techs">
-                <h5>Frontend</h6>
-                    <p><span class="iconify-inline" data-icon="cib:typescript"
-                            style="color: #6d6d6d;margin-right: 3px;"></span>TypeScript</p>
-                    <p><i class="fa-brands fa-react"></i>NodeJS</p>
-                    <p><i class="fa-brands fa-css3-alt"></i>CSS</p>
-                    <p><span class="iconify-inline" data-icon="file-icons:styledcomponents"
-                            style="color: #6d6d6d; margin-right: 3px;"></span>Styled Components</p>
 
-            </div>
+
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
                         <h2>Pix Inter</h2>
-                        <p>App para gerenciar Pix</p>
+                        <p>Faça um Pix!</p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
+
 
         <!-- Onde Comer -->
-        <div class="card-container">
+        <div class="gradient-border line"></div>
+        <div class="card-container left">
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
                         <h2>Onde Comer</h2>
-                        <p>API para busca de restaurante</p>
+                        <p>Busca de restaurante</p>
                     </a>
                 </div>
             </div>
@@ -308,24 +314,12 @@
                     <p><span class="iconify-inline" data-icon="logos:hibernate"
                             style="color: #6d6d6d; margin-right: 3px;"></span>JPA Hibernate</p>
             </div>
+        </div>
 
-        </div>
-        <div class="line">
-            <div class="loading"></div>
-            <div class="loading"></div>
-            <div class="loading"></div>
-        </div>
 
         <!-- Folha Pagamento -->
-        <div class="card-container">
-            <div class="card-text">Esse projeto foi desenvolvido como projeto final da Cerc Academy promovida pela Gama.
-                A proposta é criar uma
-                API para gerenciar a folha de pagamento de uma empresa. Com a API é possivel realizar CRUD de
-                departamentos, cargos e funcionários, lançar uma folha de pagamento,
-                verificar o valor dos impostos descontados na folha e listar todas as folhas de pagamento.
-                A API conta com um login que só permite acesso ao gestor de RH para cadastros e consultas e ao
-                funcionário para verificar seu próprio holerite.
-            </div>
+        <div class="gradient-border line "></div>
+        <div class="card-container right">
             <div class="card-techs">
                 <h5>Backend</h6>
                     <p><i class="fa-brands fa-java"></i>Java</p>
@@ -341,15 +335,48 @@
 
 
             </div>
+
+            <div class="card-text">Esse projeto foi desenvolvido como projeto final da Cerc Academy promovida pela Gama.
+                A proposta é criar uma
+                API para gerenciar a folha de pagamento de uma empresa. Com a API é possivel realizar CRUD de
+                departamentos, cargos e funcionários, lançar uma folha de pagamento,
+                verificar o valor dos impostos descontados na folha e listar todas as folhas de pagamento.
+                A API conta com um login que só permite acesso ao gestor de RH para cadastros e consultas e ao
+                funcionário para verificar seu próprio holerite.
+            </div>
+
             <div class="card">
                 <div class="card-wrapper">
                     <a href="#">
                         <h2>Payroll</h2>
-                        <p>API para gerenciar Folha de Pagamento</p>
+                        <p>Folha de Pagamento</p>
                     </a>
                 </div>
             </div>
         </div>
+        <!-- Wordpress -->
+        <div class="gradient-border line"></div>
+        <div class="card-container left">
+            <div class="card">
+                <div class="card-wrapper">
+                    <a href="https://pviralmkt.com.br/websites/">
+                        <h2>Wordpress</h2>
+                        <p>Projetos realizados em Wordpress</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card-text">Veja aqui alguns projetos em wordpress com customização de temas e funcionaliades.
+
+                <p><i class="fa-brands fa-wordpress"></i>Wordpress</p>
+                <p><i class="fa-brands fa-elementor"></i>Elementor</p>
+
+            </div>
+
+        </div>
+
+
+
+
 
     </div>
     <footer class="footer">
